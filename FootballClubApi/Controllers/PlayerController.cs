@@ -49,7 +49,7 @@ namespace FootballClubApi.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreatePlayer([FromBody] PlayerForCreationDto player)
+        public IActionResult CreatePlayer([FromBody] PlayerForCreationDto? player)
         {
             if (player == null)
             {
