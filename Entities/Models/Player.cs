@@ -38,7 +38,7 @@ public class Player
     [Column("TotalGoals")]
     public int TotalGoals { get; set; }
 
-    [ForeignKey(nameof(ClubId))]
+    [ForeignKey(nameof(Club))]
     public int ClubId { get; set; }
 
     public Club? Club { get; set; }

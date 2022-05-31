@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FootballClubApi.Migrations
 {
     [DbContext(typeof(RepositoryContext))]
-    [Migration("20220531175913_DatabaseCreation")]
+    [Migration("20220531221029_DatabaseCreation")]
     partial class DatabaseCreation
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
