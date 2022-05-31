@@ -35,6 +35,6 @@ public class PlayerForUpdateDto
     [Column("TotalGoals")]
     public int TotalGoals { get; set; }
 
-    [ForeignKey(nameof(ClubId))]
+    [ForeignKey(nameof(Club))]
     public int ClubId { get; set; }
 }
