@@ -2,7 +2,7 @@
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
     <data-source source="LOCAL" name="FootballClub" uuid="4862d84a-922c-43f5-9b4a-81ca5bc337c2">
-      <driver-ref>sqlite.xerial</driver-ref>
+      <driver-ref>7159f6c8-93ea-4bd9-8ebd-e008cafa21a6</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:C:\Users\sagit\Desktop\FootballClubApi\FootballClubApi\Entities\FootballClub.db</jdbc-url>

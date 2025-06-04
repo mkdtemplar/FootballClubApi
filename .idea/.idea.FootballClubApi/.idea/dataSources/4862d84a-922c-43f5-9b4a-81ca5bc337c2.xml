@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="FootballClub">
-  <database-model serializer="dbm" dbms="SQLITE" family-id="SQLITE" format-version="4.39">
+  <database-model serializer="dbm" dbms="SQLITE" family-id="SQLITE" format-version="4.53">
     <root id="1">
       <ServerVersion>3.36.0</ServerVersion>
     </root>
@@ -1295,80 +1295,80 @@
     </table>
     <column id="478" parent="473" name="ClubId">
       <AutoIncrement>1</AutoIncrement>
-      <DataType>INTEGER|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>INTEGER|0s</StoredType>
     </column>
     <column id="479" parent="473" name="Name">
-      <DataType>TEXT|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
+      <StoredType>TEXT|0s</StoredType>
     </column>
     <column id="480" parent="473" name="Owner">
-      <DataType>TEXT|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
+      <StoredType>TEXT|0s</StoredType>
     </column>
     <column id="481" parent="473" name="City">
-      <DataType>TEXT|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
+      <StoredType>TEXT|0s</StoredType>
     </column>
     <column id="482" parent="473" name="Country">
-      <DataType>TEXT|0s</DataType>
       <NotNull>1</NotNull>
       <Position>5</Position>
+      <StoredType>TEXT|0s</StoredType>
     </column>
     <key id="483" parent="473" name="PK_Clubs">
       <ColNames>ClubId</ColNames>
       <Primary>1</Primary>
+      <UnderlyingIndexColNames>ClubId</UnderlyingIndexColNames>
     </key>
     <column id="484" parent="474" name="PlayerId">
       <AutoIncrement>1</AutoIncrement>
-      <DataType>INTEGER|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>INTEGER|0s</StoredType>
     </column>
     <column id="485" parent="474" name="First Name">
-      <DataType>nvarchar(200)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
+      <StoredType>nvarchar(200)|0s</StoredType>
     </column>
     <column id="486" parent="474" name="Last Name">
-      <DataType>nvarchar(400)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
+      <StoredType>nvarchar(400)|0s</StoredType>
     </column>
     <column id="487" parent="474" name="Date of Birth">
-      <DataType>datetime|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
+      <StoredType>datetime|0s</StoredType>
     </column>
     <column id="488" parent="474" name="Signing Date">
-      <DataType>datetime|0s</DataType>
       <NotNull>1</NotNull>
       <Position>5</Position>
+      <StoredType>datetime|0s</StoredType>
     </column>
     <column id="489" parent="474" name="Rank">
-      <DataType>INTEGER|0s</DataType>
       <NotNull>1</NotNull>
       <Position>6</Position>
+      <StoredType>INTEGER|0s</StoredType>
     </column>
     <column id="490" parent="474" name="TotalGoals">
-      <DataType>INTEGER|0s</DataType>
       <NotNull>1</NotNull>
       <Position>7</Position>
+      <StoredType>INTEGER|0s</StoredType>
     </column>
     <column id="491" parent="474" name="ClubId">
-      <DataType>INTEGER|0s</DataType>
       <NotNull>1</NotNull>
       <Position>8</Position>
+      <StoredType>INTEGER|0s</StoredType>
     </column>
     <foreign-key id="492" parent="474" name="FK_Players_Clubs_ClubId">
       <ColNames>ClubId</ColNames>
       <OnDelete>cascade</OnDelete>
       <RefColNames>ClubId</RefColNames>
-      <RefKeyName>PK_Clubs</RefKeyName>
       <RefTableName>Clubs</RefTableName>
     </foreign-key>
     <index id="493" parent="474" name="IX_Players_ClubId">
@@ -1377,16 +1377,17 @@
     <key id="494" parent="474" name="PK_Players">
       <ColNames>PlayerId</ColNames>
       <Primary>1</Primary>
+      <UnderlyingIndexColNames>PlayerId</UnderlyingIndexColNames>
     </key>
     <column id="495" parent="475" name="MigrationId">
-      <DataType>TEXT|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
+      <StoredType>TEXT|0s</StoredType>
     </column>
     <column id="496" parent="475" name="ProductVersion">
-      <DataType>TEXT|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
+      <StoredType>TEXT|0s</StoredType>
     </column>
     <index id="497" parent="475" name="sqlite_autoindex___EFMigrationsHistory_1">
       <ColNames>MigrationId</ColNames>
@@ -1399,24 +1400,24 @@
       <UnderlyingIndexName>sqlite_autoindex___EFMigrationsHistory_1</UnderlyingIndexName>
     </key>
     <column id="499" parent="476" name="type">
-      <DataType>text|0s</DataType>
       <Position>1</Position>
+      <StoredType>text|0s</StoredType>
     </column>
     <column id="500" parent="476" name="name">
-      <DataType>text|0s</DataType>
       <Position>2</Position>
+      <StoredType>text|0s</StoredType>
     </column>
     <column id="501" parent="476" name="tbl_name">
-      <DataType>text|0s</DataType>
       <Position>3</Position>
+      <StoredType>text|0s</StoredType>
     </column>
     <column id="502" parent="476" name="rootpage">
-      <DataType>int|0s</DataType>
       <Position>4</Position>
+      <StoredType>int|0s</StoredType>
     </column>
     <column id="503" parent="476" name="sql">
-      <DataType>text|0s</DataType>
       <Position>5</Position>
+      <StoredType>text|0s</StoredType>
     </column>
     <column id="504" parent="477" name="name">
       <Position>1</Position>
